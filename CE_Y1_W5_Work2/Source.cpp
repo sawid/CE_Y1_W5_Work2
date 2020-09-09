@@ -8,11 +8,11 @@ void Palindrome(char str[]) {
     {
         if (str[i++] != str[h--])
         {
-            printf("%s is Not Palindrome", str);
+            printf("Not Palindrome");
             return;
         }
     }
-    printf("%s is palindrome", str);
+    printf("Palindrome");
 }
 
 int main() {
