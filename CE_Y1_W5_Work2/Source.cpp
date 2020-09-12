@@ -17,7 +17,13 @@ void Palindrome(char str[]) {
 
 int main() {
 	char str[100];
-	scanf("%s", str);
-    Palindrome(str);
+	scanf("%[^\n]", str);
+    if (strlen(str) >= 1 && str != " ")
+    {
+        Palindrome(str);
+    }
+    else {
+        printf("Error");
+    }
 	return 0;
 }
